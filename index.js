@@ -60,8 +60,9 @@ const checkpointFile = "./checkpoint.json";
 const pool = mysql.createPool({
   host: process.env.HOST,
   user: process.env.USER,
-  password: process.env.PWD, // Using original PWD env variable as in the original code
+  password: process.env.PWD,
   database: process.env.DB,
+  port: Number(process.env.PORT) || 3306,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
