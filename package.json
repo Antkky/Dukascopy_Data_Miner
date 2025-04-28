@@ -1,0 +1,18 @@
+{
+  "name": "dukascopy",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "node ./src/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "dukascopy-node": "^1.42.1",
+    "mysql2": "^3.14.1"
+  }
+}
